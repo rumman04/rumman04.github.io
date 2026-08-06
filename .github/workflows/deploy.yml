@@ -1,33 +1,32 @@
-name: Deploy to GitHub Pages
+name: Deploy
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]  # or master, whatever your default branch is
+
+permissions:
+  contents: write    # ← Add this line
+  pages: write
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v5
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: 18
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Build production site
+      - name: Build
         run: npm run build
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # ← Ensure this is set
           publish_dir: ./out
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
