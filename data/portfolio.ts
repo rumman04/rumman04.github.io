@@ -106,17 +106,33 @@ export const projects = [
   },
   {
     title: 'Pedestrian & Vehicle Detection with YOLOv5',
-    description: 'Real-time detection pipeline for pedestrians, humans, and vehicles using YOLOv5 on custom datasets for autonomous systems and safety applications.',
-    technologies: ['YOLOv5', 'Python', 'OpenCV', 'Computer Vision'],
-    image: '/images/projects/Potato%20Disease%20Detection.png',
+    description: 'Built a real-time object detection pipeline for pedestrians, humans, and vehicles using YOLOv5 on custom datasets for autonomous safety and surveillance applications.',
+    technologies: ['YOLOv5', 'Python', 'OpenCV', 'Computer Vision', 'Object Detection'],
+    image: '/images/projects/Pedistrian%20detection.png',
     github: 'https://github.com/rumman04/Pedestrian-Human-Vehicle-Detection-YOLOv5',
     demo: 'https://github.com/rumman04/Pedestrian-Human-Vehicle-Detection-YOLOv5'
   },
   {
-    title: 'Volume Control Hand Gesture',
-    description: 'Hand gesture recognition system for intuitive volume control using computer vision and gesture tracking.',
-    technologies: ['Python', 'OpenCV', 'Gesture Recognition'],
+    title: 'Potato Disease Detection',
+    description: 'Developed a deep learning-based system for detecting potato plant diseases from leaf images, supporting precision agriculture and early diagnosis.',
+    technologies: ['Python', 'TensorFlow', 'Computer Vision', 'Deep Learning'],
+    image: '/images/projects/Potato%20Disease%20Detection.png',
+    github: 'https://github.com/rumman04',
+    demo: 'https://github.com/rumman04'
+  },
+  {
+    title: 'Embedded AI Smart Home Automation',
+    description: 'Developed an IoT-based home automation system with ESP32, sensor integration, and embedded logic for connected device control and practical smart-home use.',
+    technologies: ['ESP32', 'IoT', 'Arduino', 'Embedded Systems', 'Python'],
     image: '/images/projects/Smart%20IoT%20Fan%20using%20ESP32.png',
+    github: 'https://github.com/rumman04',
+    demo: 'https://github.com/rumman04'
+  },
+  {
+    title: 'Volume Control Hand Gesture',
+    description: 'Implemented a vision-based hand gesture system for intuitive volume control, combining computer vision, motion tracking, and real-time interaction design.',
+    technologies: ['Python', 'OpenCV', 'Gesture Recognition', 'Computer Vision'],
+    image: '/images/projects/Hand%20gasture%20volume%20control.png',
     github: 'https://github.com/rumman04/Volume-Control-Hand-Gesture',
     demo: 'https://github.com/rumman04/Volume-Control-Hand-Gesture'
   },
@@ -172,9 +188,10 @@ export const testimonials = [
 ];
 
 export const gallery = [
-  { title: 'AI Weed Detection', image: '/images/projects/AI%20Weed%20Detection%20using%20U-Net.png' },
+  { title: 'Autonomous Drone Plant Disease Detection', image: '/images/projects/AI%20Weed%20Detection%20using%20U-Net.png' },
+  { title: 'Pedestrian & Vehicle Detection', image: '/images/projects/Pedistrian%20detection.png' },
   { title: 'Potato Disease Detection', image: '/images/projects/Potato%20Disease%20Detection.png' },
   { title: 'Smart IoT Fan', image: '/images/projects/Smart%20IoT%20Fan%20using%20ESP32.png' },
-  { title: 'UAV Agriculture', image: '/images/projects/UAV%20Smart%20Agriculture%20Research.png' },
+  { title: 'Hand Gesture Volume Control', image: '/images/projects/Hand%20gasture%20volume%20control.png' },
   { title: 'React Web Interfaces', image: '/images/projects/React%20web%20application.png' }
 ];

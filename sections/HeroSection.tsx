@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import HeroBackground from '@/components/HeroBackground';
-import { siteConfig } from '@/data/portfolio';
 
 export default function HeroSection() {
   return (
@@ -17,9 +16,9 @@ export default function HeroSection() {
           transition={{ duration: 0.8, ease: 'easeOut' }}
           className="glass-card overflow-hidden rounded-[2.5rem] border border-white/10 bg-slate-950/85 p-6 shadow-glow sm:p-8"
         >
-          <div className="grid gap-12 lg:grid-cols-[1.3fr_0.9fr] lg:items-center">
-            <div className="max-w-3xl space-y-6 min-w-0">
-              <span className="inline-flex rounded-full bg-sky-500/15 px-4 py-2 text-sm font-medium uppercase tracking-[0.28em] text-sky-200">
+          <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
+            <div className="max-w-3xl space-y-6 min-w-0 pt-2">
+              <span className="inline-flex w-fit max-w-full flex-wrap items-center justify-center rounded-full bg-sky-500/15 px-4 py-2 text-[11px] font-medium uppercase tracking-[0.18em] text-sky-200 sm:text-sm">
                 Computer Engineer • AI Researcher • Embedded Systems
               </span>
               <div className="space-y-4">
@@ -61,16 +60,23 @@ export default function HeroSection() {
               initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
-              className="relative mx-auto w-full max-w-md rounded-[2rem] border border-white/10 bg-slate-900/70 p-6 shadow-2xl shadow-slate-950/40 sm:p-8"
+              className="relative mx-auto w-full max-w-md self-start rounded-[2rem] border border-white/10 bg-slate-900/70 p-6 shadow-2xl shadow-slate-950/40 sm:p-8"
             >
               <div className="absolute -left-8 top-8 h-20 w-20 rounded-full bg-sky-500/10 blur-2xl" />
               <div className="absolute -right-8 bottom-10 h-24 w-24 rounded-full bg-violet-500/10 blur-3xl" />
               <div className="space-y-4">
+                <div className="flex items-center justify-center overflow-hidden rounded-[1.25rem] border border-white/10 bg-slate-950/70 p-2 shadow-lg shadow-slate-900/30">
+                  <img
+                    src="/images/projects/profile.jpg"
+                    alt="Rumman Ahmed"
+                    className="h-56 w-full max-w-[220px] rounded-[1rem] object-cover object-center sm:h-64 sm:max-w-[260px]"
+                  />
+                </div>
                 <div className="rounded-3xl bg-slate-950/80 p-6 shadow-xl shadow-slate-900/40">
-                  <p className="text-sm uppercase tracking-[0.24em] text-slate-400">Hero Snapshot</p>
-                  <h2 className="mt-3 text-2xl font-semibold text-white">Build intelligent systems</h2>
+                  <p className="text-sm uppercase tracking-[0.24em] text-slate-400">Profile Snapshot</p>
+                  <h2 className="mt-3 text-2xl font-semibold text-white">From research to real-world systems</h2>
                   <p className="mt-2 text-sm leading-6 text-slate-400">
-                    Premium portfolio design with glassmorphism, polished motion, and modern gradients.
+                    Computer engineer focused on AI, computer vision, embedded systems, and practical innovation backed by a strong academic and technical background.
                   </p>
                 </div>
                 <div className="grid gap-4 sm:grid-cols-2">

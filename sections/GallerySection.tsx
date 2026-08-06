@@ -24,7 +24,7 @@ export default function GallerySection() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white">{item.title}</h3>
-                <p className="mt-3 text-slate-400">A premium snapshot of key project visuals and design.</p>
+                <p className="mt-3 text-slate-400">A concise visual summary of the research, engineering, and design work behind each project.</p>
               </div>
             </motion.div>
           ))}
