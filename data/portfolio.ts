@@ -27,7 +27,7 @@ export const education = [
   {
     title: 'Bachelor of Computer Engineering',
     institution: 'COMSATS University Islamabad, Abbottabad Campus',
-    date: '2020 - 2024',
+    date: '2021 - 2025',
     details: ['CGPA: 3.43 / 4.00', 'Relevant coursework: AI, Computer Vision, Embedded Systems, Robotics']
   }
 ];
@@ -36,7 +36,7 @@ export const experience = [
   {
     role: 'Lab Engineer',
     company: 'Ghulam Ishaq Khan Institute (GIKI)',
-    date: '2024 - Present',
+    date: '1-Jan-2026 - Present',
     responsibilities: [
       'Supervised AI and embedded systems labs',
       'Taught AI students and provided programming guidance',
@@ -57,7 +57,7 @@ export const experience = [
   {
     role: 'Frontend Developer Intern',
     company: 'Xpert Technology',
-    date: '2024',
+    date: '2025',
     responsibilities: [
       'Built responsive web interfaces and dashboard components',
       'Collaborated with design and engineering teams to improve UX',
@@ -67,7 +67,7 @@ export const experience = [
   {
     role: 'Business Development Officer',
     company: 'Telenor Pakistan',
-    date: '2023',
+    date: '2025',
     responsibilities: ['Collaborated on technical outreach and market initiatives.']
   }
 ];
