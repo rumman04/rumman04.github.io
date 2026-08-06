@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rumman Ahmed - Computer Engineer, AI & Computer Vision Researcher, Embedded Systems Engineer." />
+    <title>Rumman Ahmed | AI Researcher & Embedded Systems Engineer</title>
+    <meta property="og:title" content="Rumman Ahmed | AI Researcher & Embedded Systems Engineer" />
+    <meta property="og:description" content="Premium portfolio of Rumman Ahmed with AI, computer vision, embedded systems, and research highlights." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rumman04.github.io" />
+    <meta property="og:image" content="https://rumman04.github.io/favicon.svg" />
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        background: #020617;
+        color: #e2e8f0;
+        scroll-behavior: smooth;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; min-height: 100vh; background: radial-gradient(circle at 20% 10%, rgba(59,130,246,0.18), transparent 20%), radial-gradient(circle at 80% 0%, rgba(168,85,247,0.14), transparent 18%), linear-gradient(180deg, #020617 0%, #04060c 100%); }
+      a { color: inherit; text-decoration: none; }
+      .container { width: min(1200px, calc(100% - 32px)); margin: 0 auto; }
+      header { position: sticky; top: 0; z-index: 20; backdrop-filter: blur(20px); background: rgba(2,6,23,0.8); border-bottom: 1px solid rgba(148,163,184,0.12); }
+      nav { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:1rem 0; }
+      .brand { font-weight:700; letter-spacing:.2em; font-size:.95rem; text-transform:uppercase; color:#7dd3fc; }
+      .nav-links { display:flex; flex-wrap:wrap; gap:.8rem; font-size:.78rem; letter-spacing:.2em; color:#94a3b8; }
+      .nav-links a:hover { color:#7dd3fc; }
+      .hero { display:grid; gap:2rem; padding:6rem 0 4rem; align-items:center; }
+      .hero-copy { max-width:40rem; }
+      .hero-copy h1 { margin:0; font-size:clamp(3rem,5vw,5rem); line-height:1; font-weight:800; letter-spacing:-.04em; }
+      .hero-copy p { margin:.75rem 0 0; max-width:36rem; line-height:1.9; color:#cbd5e1; }
+      .badge { display:inline-flex; align-items:center; gap:.5rem; padding:.7rem 1rem; border-radius:999px; background:rgba(56,189,248,.12); border:1px solid rgba(56,189,248,.22); color:#7dd3fc; font-size:.78rem; text-transform:uppercase; letter-spacing:.18em; }
+      .hero-buttons { display:flex; flex-wrap:wrap; gap:1rem; margin-top:1.8rem; }
+      .button { display:inline-flex; align-items:center; justify-content:center; gap:.5rem; padding:1rem 1.6rem; border-radius:999px; font-weight:600; transition:transform .2s ease, background .2s ease; }
+      .button.primary { background: linear-gradient(135deg,#38bdf8,#a78bfa); color:#020617; }
+      .button.secondary { border:1px solid rgba(148,163,184,.18); background:rgba(15,23,42,.9); color:#e2e8f0; }
+      .button:hover { transform:translateY(-3px); }
+      .hero-cards { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); margin-top:2rem; }
+      .card { position:relative; padding:1.5rem; border-radius:2rem; background:rgba(15,23,42,.72); border:1px solid rgba(148,163,184,.12); backdrop-filter:blur(18px); }
+      .card::before { content:''; position:absolute; inset:-1px; border-radius:2rem; background:linear-gradient(135deg,rgba(56,189,248,.45),rgba(168,85,247,.45)); z-index:-1; filter:blur(15px); opacity:.55; }
+      .card h3 { margin:0; font-size:1.15rem; color:#f8fafc; }
+      .card p { margin:.8rem 0 0; font-size:.95rem; line-height:1.8; color:#cbd5e1; }
+      section { padding:4rem 0; }
+      .section-title { display:flex; align-items:center; gap:.8rem; margin-bottom:1.5rem; }
+      .section-title::before { content:''; width:3rem; height:1px; background:#38bdf8; opacity:.7; }
+      .section-title span { text-transform:uppercase; font-size:.75rem; letter-spacing:.35em; color:#38bdf8; }
+      .section-title h2 { margin:0; font-size:2.5rem; color:#f8fafc; }
+      .split { display:grid; gap:2rem; }
+      .timeline, .blocks, .grid-3 { display:grid; gap:1.25rem; }
+      .timeline-item, .info-card, .project-card { border-radius:1.8rem; background:rgba(15,23,42,.76); border:1px solid rgba(148,163,184,.12); padding:1.6rem; box-shadow:0 40px 120px rgba(15,23,42,.12); }
+      .timeline-item h3, .info-card h3, .project-card h3 { margin:0 0 .75rem; font-size:1.15rem; }
+      .timeline-item p, .info-card p, .project-card p, .project-card .tags span { color:#cbd5e1; line-height:1.8; }
+      .timeline-meta { display:flex; align-items:center; justify-content:space-between; gap:.75rem; flex-wrap:wrap; }
+      .badge-small { padding:.45rem .9rem; border-radius:999px; background:rgba(148,163,184,.1); color:#cbd5e1; font-size:.8rem; }
+      .project-card img { width:100%; border-radius:1.4rem; aspect-ratio:16/9; object-fit:cover; background:#0f172a; }
+      .project-links { display:flex; flex-wrap:wrap; gap:.75rem; margin-top:1.2rem; }
+      .project-links a { font-size:.85rem; color:#cbd5e1; border:1px solid rgba(148,163,184,.18); padding:.75rem 1rem; border-radius:999px; background:rgba(15,23,42,.8); transition:background .2s ease; }
+      .project-links a:hover { background:rgba(56,189,248,.12); color:#7dd3fc; }
+      .skill-pill { display:inline-flex; align-items:center; margin:.2rem .3rem .2rem 0; padding:.65rem 1rem; border-radius:999px; background:rgba(15,23,42,.85); border:1px solid rgba(148,163,184,.12); color:#cbd5e1; font-size:.85rem; }
+      .hero-visual { position:relative; min-height:420px; border-radius:2rem; overflow:hidden; background:linear-gradient(180deg,rgba(59,130,246,.2),rgba(168,85,247,.16)); border:1px solid rgba(148,163,184,.14); }
+      .hero-visual::before { content:''; position:absolute; inset:0; background-image:radial-gradient(circle at 20% 20%, rgba(56,189,248,.18), transparent 12%), radial-gradient(circle at 80% 20%, rgba(168,85,247,.18), transparent 12%), radial-gradient(circle at 50% 80%, rgba(96,165,250,.2), transparent 20%); }
+      .visual-card { position:absolute; inset:1.5rem; border-radius:2rem; display:grid; place-items:center; color:#f8fafc; overflow:hidden; }
+      .visual-card h3 { margin:0; font-size:2rem; }
+      .visual-card p { margin:.75rem 0 0; color:#cbd5e1; line-height:1.7; max-width:18rem; text-align:center; }
+      .projects-grid { display:grid; gap:1.5rem; }
+      .research-grid, .gallery-grid, .testimonial-grid { display:grid; gap:1.25rem; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); }
+      .research-pill { padding:1rem; border-radius:1.8rem; border:1px solid rgba(148,163,184,.12); background:rgba(15,23,42,.72); font-weight:600; color:#f8fafc; }
+      .achievement-pill { padding:1.2rem 1.4rem; border-radius:1.8rem; background:rgba(15,23,42,.72); border:1px solid rgba(148,163,184,.12); color:#f8fafc; font-weight:600; }
+      .contact-grid { display:grid; gap:1.5rem; }
+      .contact-card, .contact-form { border-radius:2rem; background:rgba(15,23,42,.76); border:1px solid rgba(148,163,184,.12); padding:2rem; }
+      .contact-card p, .contact-form label { color:#cbd5e1; }
+      .contact-form input, .contact-form textarea { width:100%; background:rgba(15,23,42,.9); border:1px solid rgba(148,163,184,.15); border-radius:1rem; color:#e2e8f0; padding:1rem; margin-top:.5rem; }
+      .contact-form button { cursor:pointer; border:none; border-radius:999px; padding:1rem 1.5rem; background:linear-gradient(135deg,#38bdf8,#a78bfa); color:#020617; font-weight:700; }
+      .footer { padding:2rem 0 4rem; text-align:center; color:#94a3b8; font-size:.95rem; }
+      .socials { display:flex; justify-content:center; flex-wrap:wrap; gap:1rem; margin-top:1rem; }
+      .socials a { color:#cbd5e1; }
+      .section-highlight { color:#7dd3fc; }
+      @media (max-width:900px) { .hero { grid-template-columns:1fr; } .hero-visual { min-height:320px; } }
+      @media (max-width:640px) { .nav-links { justify-content:center; } .hero { padding-top:4rem; } }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a class="brand" href="#home">Rumman Ahmed</a>
+          <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#research">Research</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section id="home" class="hero">
+        <div class="hero-copy">
+          <span class="badge">Computer Engineer • AI Researcher • Embedded Systems</span>
+          <h1>Rumman Ahmed</h1>
+          <p>Passionate Computer Engineer with experience in Artificial Intelligence, Computer Vision, Machine Learning, Deep Learning, Embedded Systems, IoT, Robotics, UAVs, and Full Stack Development. I enjoy building intelligent systems that solve real-world problems through innovation and research.</p>
+          <div class="hero-buttons">
+            <a class="button primary" href="/resume.pdf" download>Download CV</a>
+            <a class="button secondary" href="#projects">View Projects</a>
+            <a class="button secondary" href="#contact">Contact Me</a>
+          </div>
+          <div class="hero-cards">
+            <div class="card"><h3>100+ Projects</h3><p>Research, embedded systems and AI-driven applications delivered with professional polish.</p></div>
+            <div class="card"><h3>Premium Design</h3><p>Modern glassmorphism, bold gradients, and responsive layout for a standout portfolio presence.</p></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-card">
+            <h3>Modern Intelligence</h3>
+            <p>Glassmorphism interface, smooth motion, and polished details for a professional portfolio experience.</p>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="section-title"><span>About</span></div>
+        <h2>Professional Summary</h2>
+        <div class="split">
+          <div class="info-card"><h3>Who I am</h3><p>Computer Engineering graduate with a strong passion for Artificial Intelligence, Machine Learning, Deep Learning, Computer Vision, Embedded Systems, IoT, Robotics, UAV Research, Smart Agriculture, and academic research.</p></div>
+          <div class="info-card"><h3>What I love</h3><p>Building intelligent systems that solve real-world problems through research-driven design, innovation, and high-impact engineering.</p></div>
+        </div>
+      </section>
+      <section id="education">
+        <div class="section-title"><span>Education</span></div>
+        <h2>Academic Timeline</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-meta"><div><h3>Bachelor of Computer Engineering</h3><p>COMSATS University Islamabad, Abbottabad Campus</p></div><span class="badge-small">2020 - 2024</span></div>
+            <p>CGPA: 3.43 / 4.00. Relevant coursework includes AI, Computer Vision, Embedded Systems, Robotics.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-meta"><div><h3>Master of Science in Artificial Intelligence (Future)</h3><p>University of Milano-Bicocca, Italy</p></div><span class="badge-small">2026 - 2028</span></div>
+            <p>Focused on AI research, machine intelligence, autonomy, and emerging intelligent systems.</p>
+          </div>
+        </div>
+      </section>
+      <section id="experience">
+        <div class="section-title"><span>Experience</span></div>
+        <h2>Professional Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-meta"><div><h3>Lab Engineer</h3><p>Ghulam Ishaq Khan Institute (GIKI)</p></div><span class="badge-small">2024 - Present</span></div>
+            <ul><li>Supervised AI and embedded systems labs.</li><li>Taught AI students and delivered programming guidance.</li><li>Troubleshot hardware, electronics, and robotics systems.</li><li>Supported embedded systems and AI laboratories.</li></ul>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-meta"><div><h3>Business Development Officer</h3><p>Telenor Pakistan</p></div><span class="badge-small">2023</span></div>
+            <p>Collaborated on technical outreach, market initiatives, and cross-functional communication.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-meta"><div><h3>Frontend Developer Intern</h3><p>React Developer</p></div><span class="badge-small">2022</span></div>
+            <p>Built responsive UI components and modern web interfaces using React.</p>
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <div class="section-title"><span>Skills</span></div>
+        <h2>Core Competencies</h2>
+        <div class="research-grid">
+          <div class="research-pill">C++</div>
+          <div class="research-pill">Python</div>
+          <div class="research-pill">Java</div>
+          <div class="research-pill">JavaScript</div>
+          <div class="research-pill">MATLAB</div>
+          <div class="research-pill">SQL</div>
+          <div class="research-pill">React</div>
+          <div class="research-pill">Next.js</div>
+          <div class="research-pill">Tailwind</div>
+          <div class="research-pill">TensorFlow</div>
+          <div class="research-pill">PyTorch</div>
+          <div class="research-pill">OpenCV</div>
+          <div class="research-pill">YOLO</div>
+          <div class="research-pill">ESP32</div>
+          <div class="research-pill">Arduino</div>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="section-title"><span>Projects</span></div>
+        <h2>Featured Work</h2>
+        <div class="projects-grid">
+          <div class="project-card"><h3>AI Weed Detection using U-Net</h3><p>Semantic segmentation model for identifying weeds and crops using deep vision techniques.</p><div class="project-links"><a href="https://github.com/rumman04/ai-weed-detection" target="_blank">GitHub</a><a href="#">Live Demo</a></div></div>
+          <div class="project-card"><h3>Potato Disease Detection</h3><p>CNN system for early detection of potato leaf diseases using image analytics.</p><div class="project-links"><a href="https://github.com/rumman04/potato-disease-detection" target="_blank">GitHub</a><a href="#">Live Demo</a></div></div>
+          <div class="project-card"><h3>Smart IoT Fan using ESP32</h3><p>IoT fan controller with sensor monitoring and Blynk integration.</p><div class="project-links"><a href="https://github.com/rumman04/smart-iot-fan" target="_blank">GitHub</a><a href="#">Live Demo</a></div></div>
+          <div class="project-card"><h3>UAV Smart Agriculture Research</h3><p>Drone research combining computer vision and deep learning for agriculture monitoring.</p><div class="project-links"><a href="https://github.com/rumman04/uav-smart-agriculture" target="_blank">GitHub</a><a href="#">Live Demo</a></div></div>
+          <div class="project-card"><h3>React Web Applications</h3><p>Modern frontend interfaces built with React and Tailwind CSS.</p><div class="project-links"><a href="https://github.com/rumman04/react-web-apps" target="_blank">GitHub</a><a href="#">Live Demo</a></div></div>
+        </div>
+      </section>
+      <section id="research">
+        <div class="section-title"><span>Research</span></div>
+        <h2>Research Interests</h2>
+        <div class="research-grid">
+          <div class="research-pill">Artificial Intelligence</div>
+          <div class="research-pill">Computer Vision</div>
+          <div class="research-pill">Machine Learning</div>
+          <div class="research-pill">Deep Learning</div>
+          <div class="research-pill">LLMs</div>
+          <div class="research-pill">Embedded AI</div>
+          <div class="research-pill">Autonomous Systems</div>
+          <div class="research-pill">Precision Agriculture</div>
+          <div class="research-pill">UAV Technologies</div>
+          <div class="research-pill">Robotics</div>
+          <div class="research-pill">Smart Systems</div>
+        </div>
+      </section>
+      <section id="certifications">
+        <div class="section-title"><span>Certifications</span></div>
+        <h2>Professional Certifications</h2>
+        <div class="research-grid">
+          <div class="achievement-pill">Certified AI Practitioner</div>
+          <div class="achievement-pill">Computer Vision Specialist</div>
+          <div class="achievement-pill">Embedded Systems Developer</div>
+          <div class="achievement-pill">IoT & Robotics Practitioner</div>
+        </div>
+      </section>
+      <section id="resume">
+        <div class="section-title"><span>Resume</span></div>
+        <h2>Download My CV</h2>
+        <div class="split">
+          <div class="info-card"><h3>Professional Resume</h3><p>Download the latest resume PDF to review academic background, professional experience, and research credentials.</p></div>
+          <div class="info-card"><a class="button primary" href="/resume.pdf" download>Download CV</a></div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="section-title"><span>Contact</span></div>
+        <h2>Get in Touch</h2>
+        <div class="contact-grid">
+          <div class="contact-card"><p><strong>Email:</strong> khanrumman820@gmail.com</p><p><strong>Phone:</strong> +92 317 3960244</p><p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rumman-ahmed-bce" target="_blank">linkedin.com/in/rumman-ahmed-bce</a></p><p><strong>GitHub:</strong> <a href="https://github.com/rumman04" target="_blank">github.com/rumman04</a></p><p><strong>Location:</strong> Pakistan</p></div>
+          <div class="contact-form"><form><label>Name<input type="text" placeholder="Your name" /></label><label>Email<input type="email" placeholder="Your email" /></label><label>Message<textarea rows="5" placeholder="Your message"></textarea></label><button type="button">Send Message</button></form></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div>© 2026 Rumman Ahmed • Built with premium dark UI and responsive design.</div>
+      <div class="socials"><a href="https://github.com/rumman04" target="_blank">GitHub</a><a href="https://www.linkedin.com/in/rumman-ahmed-bce" target="_blank">LinkedIn</a></div>
+    </footer>
+  </body>
+</html>

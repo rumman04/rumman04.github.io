@@ -6,12 +6,15 @@
   color-scheme: dark;
   color: #e5e7eb;
   background-color: #020617;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-inter), sans-serif;
   scroll-behavior: smooth;
 }
 
-html {
-  scroll-behavior: smooth;
+html[data-theme='light'],
+html.light {
+  color-scheme: light;
+  color: #0f172a;
+  background-color: #f8fafc;
 }
 
 body {
@@ -21,6 +24,190 @@ body {
     radial-gradient(circle at 20% 10%, rgba(139,92,246,0.18), transparent 20%),
     linear-gradient(180deg, #01040a 0%, #020617 100%);
   color: #e5e7eb;
+}
+
+html[data-theme='light'] body,
+html.light body {
+  background: radial-gradient(circle at top, rgba(59,130,246,0.1), transparent 25%),
+    radial-gradient(circle at 20% 10%, rgba(168,85,247,0.08), transparent 18%),
+    linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+  color: #0f172a;
+}
+
+html[data-theme='light'] .glass-card,
+html.light .glass-card {
+  background: rgba(255, 255, 255, 0.94);
+  border-color: rgba(148, 163, 184, 0.3);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, background-color 0.35s ease;
+}
+
+html[data-theme='light'] .glass-card:hover,
+html.light .glass-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 75px rgba(15, 23, 42, 0.12);
+}
+
+html[data-theme='light'] .glass-card h1,
+html.light .glass-card h1,
+html[data-theme='light'] .glass-card h2,
+html.light .glass-card h2,
+html[data-theme='light'] .glass-card h3,
+html.light .glass-card h3,
+html[data-theme='light'] .glass-card p,
+html.light .glass-card p,
+html[data-theme='light'] .glass-card span,
+html.light .glass-card span,
+html[data-theme='light'] .glass-card a,
+html.light .glass-card a,
+html[data-theme='light'] .glass-card li,
+html.light .glass-card li {
+  color: #0f172a;
+}
+
+html[data-theme='light'] .border-slate-950\/80,
+html.light .border-slate-950\/80,
+html[data-theme='light'] .bg-slate-950\/80,
+html.light .bg-slate-950\/80,
+html[data-theme='light'] .bg-slate-950\/85,
+html.light .bg-slate-950\/85,
+html[data-theme='light'] .bg-slate-900\/80,
+html.light .bg-slate-900\/80,
+html[data-theme='light'] .bg-slate-900\/90,
+html.light .bg-slate-900\/90,
+html[data-theme='light'] .bg-slate-900,
+html.light .bg-slate-900 {
+  background-color: rgba(255, 255, 255, 0.94) !important;
+}
+
+html[data-theme='light'] .bg-white\/5,
+html.light .bg-white\/5,
+html[data-theme='light'] .bg-sky-500\/15,
+html.light .bg-sky-500\/15,
+html[data-theme='light'] .bg-sky-300,
+html.light .bg-sky-300,
+html[data-theme='light'] .bg-sky-400\/80,
+html.light .bg-sky-400\/80 {
+  background-color: rgba(56, 189, 248, 0.12) !important;
+}
+
+html[data-theme='light'] .text-slate-300,
+html.light .text-slate-300,
+html[data-theme='light'] .text-slate-400,
+html.light .text-slate-400,
+html[data-theme='light'] .text-slate-200,
+html.light .text-slate-200,
+html[data-theme='light'] .text-slate-100,
+html.light .text-slate-100,
+html[data-theme='light'] .text-white,
+html.light .text-white {
+  color: #0f172a !important;
+}
+
+html[data-theme='light'] .text-slate-500,
+html.light .text-slate-500,
+html[data-theme='light'] .text-slate-600,
+html.light .text-slate-600,
+html[data-theme='light'] .text-slate-700,
+html.light .text-slate-700 {
+  color: #334155 !important;
+}
+
+html[data-theme='light'] .text-sky-300,
+html.light .text-sky-300 {
+  color: #2563eb !important;
+}
+
+html[data-theme='light'] .text-violet-300,
+html.light .text-violet-300 {
+  color: #7c3aed !important;
+}
+
+html[data-theme='light'] .border-slate-700,
+html.light .border-slate-700,
+html[data-theme='light'] .border-slate-800,
+html.light .border-slate-800,
+html[data-theme='light'] .border-slate-950\/80,
+html.light .border-slate-950\/80,
+html[data-theme='light'] .border-slate-900\/80,
+html.light .border-slate-900\/80 {
+  border-color: rgba(15, 23, 42, 0.1) !important;
+}
+
+html[data-theme='light'] .shadow-glow,
+html.light .shadow-glow {
+  box-shadow: 0 20px 80px rgba(15, 23, 42, 0.08);
+}
+
+html[data-theme='light'] .shadow-2xl,
+html.light .shadow-2xl,
+html[data-theme='light'] .shadow-xl,
+html.light .shadow-xl {
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+}
+
+html[data-theme='light'] .hover\:bg-sky-300:hover,
+html.light .hover\:bg-sky-300:hover {
+  background-color: rgba(56, 189, 248, 0.16) !important;
+}
+
+html[data-theme='light'] .hover\:bg-violet-300:hover,
+html.light .hover\:bg-violet-300:hover {
+  background-color: rgba(124, 58, 237, 0.16) !important;
+}
+
+html[data-theme='light'] .hover\:border-sky-300:hover,
+html.light .hover\:border-sky-300:hover {
+  border-color: rgba(56, 189, 248, 0.35) !important;
+}
+
+html[data-theme='light'] .hover\:border-violet-300:hover,
+html.light .hover\:border-violet-300:hover {
+  border-color: rgba(124, 58, 237, 0.35) !important;
+}
+
+html[data-theme='light'] .border-slate-700,
+html[data-theme='light'] .border-slate-800,
+html[data-theme='light'] .border-slate-950\/80,
+html[data-theme='light'] .border-slate-900\/80 {
+  border-color: rgba(15, 23, 42, 0.1) !important;
+}
+
+html[data-theme='light'] .bg-slate-950\/95,
+html[data-theme='light'] .bg-slate-900\/85,
+html[data-theme='light'] .bg-slate-950\/80,
+html[data-theme='light'] .bg-slate-900\/70,
+html[data-theme='light'] .bg-slate-950\/50,
+html[data-theme='light'] .bg-slate-900\/80,
+html[data-theme='light'] .bg-slate-950\/80,
+html[data-theme='light'] .bg-slate-900 {
+  background-color: rgba(255, 255, 255, 0.92) !important;
+}
+
+html[data-theme='light'] .bg-white\/5,
+html[data-theme='light'] .bg-sky-500\/15,
+html[data-theme='light'] .bg-sky-300,
+html[data-theme='light'] .bg-sky-400\/80 {
+  background-color: rgba(15, 23, 42, 0.08) !important;
+}
+
+html[data-theme='light'] .text-slate-200,
+html[data-theme='light'] .text-slate-300,
+html[data-theme='light'] .text-slate-400,
+html[data-theme='light'] .text-white,
+html[data-theme='light'] .text-slate-500,
+html[data-theme='light'] .text-slate-600,
+html[data-theme='light'] .text-slate-700 {
+  color: #0f172a !important;
+}
+
+html[data-theme='light'] .shadow-glow {
+  box-shadow: 0 20px 80px rgba(15, 23, 42, 0.08);
+}
+
+html[data-theme='light'] .shadow-2xl,
+html[data-theme='light'] .shadow-xl {
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
 }
 
 * {
@@ -54,6 +241,16 @@ textarea:focus,
 select:focus {
   outline: 2px solid rgba(96, 165, 250, 0.75);
   outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    background-position: center top;
+  }
 }
 
 ::selection {

@@ -1,6 +1,12 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import AnimatedCursor from '@/components/AnimatedCursor';
+import { Inter } from 'next/font/google';
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap'
+});
 
 export const metadata: Metadata = {
   title: 'Rumman Ahmed | AI & Computer Vision Researcher',
@@ -33,11 +39,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body>
-        {children}
-        <AnimatedCursor />
-      </body>
+    <html lang="en" className={inter.className} suppressHydrationWarning>
+      <body>{children}</body>
     </html>
   );
 }

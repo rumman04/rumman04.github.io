@@ -19,7 +19,9 @@ export default function GallerySection() {
               whileHover={{ y: -6 }}
               className="group overflow-hidden rounded-3xl border border-white/10 bg-slate-950/80 shadow-glow"
             >
-              <img src={item.image} alt={item.title} className="h-64 w-full object-cover transition duration-500 group-hover:scale-105" />
+              <div className="aspect-[4/3] overflow-hidden bg-slate-900/80">
+                <img src={item.image} alt={item.title} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-white">{item.title}</h3>
                 <p className="mt-3 text-slate-400">A premium snapshot of key project visuals and design.</p>

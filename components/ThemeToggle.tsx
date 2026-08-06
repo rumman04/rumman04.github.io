@@ -10,12 +10,14 @@ export default function ThemeToggle() {
     const initial = stored || 'dark';
     setTheme(initial);
     document.documentElement.dataset.theme = initial;
+    document.documentElement.classList.toggle('light', initial === 'light');
   }, []);
 
   const toggleTheme = () => {
     const nextTheme = theme === 'dark' ? 'light' : 'dark';
     setTheme(nextTheme);
     document.documentElement.dataset.theme = nextTheme;
+    document.documentElement.classList.toggle('light', nextTheme === 'light');
     window.localStorage.setItem('portfolio-theme', nextTheme);
   };
 

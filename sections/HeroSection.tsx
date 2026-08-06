@@ -15,10 +15,10 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 32 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
-          className="glass-card border border-white/10 bg-slate-950/85 p-8 shadow-glow"
+          className="glass-card overflow-hidden rounded-[2.5rem] border border-white/10 bg-slate-950/85 p-6 shadow-glow sm:p-8"
         >
-          <div className="flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
-            <div className="max-w-3xl space-y-6">
+          <div className="grid gap-12 lg:grid-cols-[1.3fr_0.9fr] lg:items-center">
+            <div className="max-w-3xl space-y-6 min-w-0">
               <span className="inline-flex rounded-full bg-sky-500/15 px-4 py-2 text-sm font-medium uppercase tracking-[0.28em] text-sky-200">
                 Computer Engineer • AI Researcher • Embedded Systems
               </span>
@@ -35,14 +35,24 @@ export default function HeroSection() {
                   Passionate Computer Engineer with experience in Artificial Intelligence, Computer Vision, Machine Learning, Deep Learning, Embedded Systems, IoT, Robotics, UAVs, and Full Stack Development. I enjoy building intelligent systems that solve real-world problems through innovation and research.
                 </p>
               </div>
-              <div className="flex flex-wrap gap-4">
-                <a href="/resume.pdf" download className="inline-flex items-center justify-center rounded-full bg-sky-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-sky-400">
+              <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+                <a
+                  href="/resume.pdf"
+                  download
+                  className="inline-flex w-full items-center justify-center rounded-full bg-sky-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-sky-400 sm:w-auto"
+                >
                   Download CV
                 </a>
-                <a href="#projects" className="inline-flex items-center justify-center rounded-full border border-slate-700 bg-white/5 px-6 py-3 text-sm font-semibold text-slate-100 transition hover:border-sky-300 hover:text-sky-300">
+                <a
+                  href="#projects"
+                  className="inline-flex w-full items-center justify-center rounded-full border border-slate-700 bg-white/5 px-6 py-3 text-sm font-semibold text-slate-100 transition hover:border-sky-300 hover:text-sky-300 sm:w-auto"
+                >
                   View Projects
                 </a>
-                <a href="#contact" className="inline-flex items-center justify-center rounded-full border border-slate-700 bg-white/5 px-6 py-3 text-sm font-semibold text-slate-100 transition hover:border-violet-300 hover:text-violet-300">
+                <a
+                  href="#contact"
+                  className="inline-flex w-full items-center justify-center rounded-full border border-slate-700 bg-white/5 px-6 py-3 text-sm font-semibold text-slate-100 transition hover:border-violet-300 hover:text-violet-300 sm:w-auto"
+                >
                   Contact Me
                 </a>
               </div>
@@ -51,7 +61,7 @@ export default function HeroSection() {
               initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
-              className="relative mx-auto w-full max-w-sm rounded-3xl border border-white/10 bg-slate-900/70 p-6 shadow-2xl shadow-slate-950/40"
+              className="relative mx-auto w-full max-w-md rounded-[2rem] border border-white/10 bg-slate-900/70 p-6 shadow-2xl shadow-slate-950/40 sm:p-8"
             >
               <div className="absolute -left-8 top-8 h-20 w-20 rounded-full bg-sky-500/10 blur-2xl" />
               <div className="absolute -right-8 bottom-10 h-24 w-24 rounded-full bg-violet-500/10 blur-3xl" />
@@ -64,11 +74,11 @@ export default function HeroSection() {
                   </p>
                 </div>
                 <div className="grid gap-4 sm:grid-cols-2">
-                  <div className="rounded-3xl border border-white/10 bg-slate-950/80 p-4 text-center">
+                  <div className="rounded-3xl border border-white/10 bg-slate-950/80 p-4 text-center transition hover:bg-slate-900/90">
                     <p className="text-3xl font-semibold text-sky-300">100+</p>
                     <p className="mt-2 text-sm text-slate-400">Projects & Research Insights</p>
                   </div>
-                  <div className="rounded-3xl border border-white/10 bg-slate-950/80 p-4 text-center">
+                  <div className="rounded-3xl border border-white/10 bg-slate-950/80 p-4 text-center transition hover:bg-slate-900/90">
                     <p className="text-3xl font-semibold text-violet-300">95%</p>
                     <p className="mt-2 text-sm text-slate-400">Performance & Quality Focus</p>
                   </div>

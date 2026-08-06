@@ -29,12 +29,6 @@ export const education = [
     institution: 'COMSATS University Islamabad, Abbottabad Campus',
     date: '2020 - 2024',
     details: ['CGPA: 3.43 / 4.00', 'Relevant coursework: AI, Computer Vision, Embedded Systems, Robotics']
-  },
-  {
-    title: 'Master of Science in Artificial Intelligence (Future)',
-    institution: 'University of Milano-Bicocca, Italy',
-    date: '2026 - 2028',
-    details: ['Focused on AI research, machine intelligence, and autonomy.']
   }
 ];
 
@@ -51,16 +45,30 @@ export const experience = [
     ]
   },
   {
+    role: 'Research Intern',
+    company: 'Ariel Robotics Lab, NUST University',
+    date: '2024',
+    responsibilities: [
+      'Supported robotics and autonomous systems development',
+      'Assisted with perception algorithm research and sensor integration',
+      'Helped test embedded hardware and ROS-enabled prototypes'
+    ]
+  },
+  {
+    role: 'Frontend Developer Intern',
+    company: 'Xpert Technology',
+    date: '2024',
+    responsibilities: [
+      'Built responsive web interfaces and dashboard components',
+      'Collaborated with design and engineering teams to improve UX',
+      'Implemented feature enhancements using modern JavaScript and CSS'
+    ]
+  },
+  {
     role: 'Business Development Officer',
     company: 'Telenor Pakistan',
     date: '2023',
     responsibilities: ['Collaborated on technical outreach and market initiatives.']
-  },
-  {
-    role: 'Frontend Developer Intern',
-    company: 'React Developer',
-    date: '2022',
-    responsibilities: ['Built responsive UI components and web experiences.']
   }
 ];
 
@@ -89,44 +97,36 @@ export const skills = [
 
 export const projects = [
   {
-    title: 'AI Weed Detection using U-Net',
-    description: 'Semantic segmentation model for identifying weeds and crops using deep vision techniques.',
-    technologies: ['TensorFlow', 'U-Net', 'Computer Vision'],
-    image: '/project-weed.png',
-    github: 'https://github.com/rumman04/ai-weed-detection',
-    demo: '#'
+    title: 'Autonomous Drone Plant Disease Detection',
+    description: 'Precision agriculture system using Pixhawk 2.4.8, Raspberry Pi 3B+, MobileNetV2 for weed classification, and U-Net for future disease segmentation.',
+    technologies: ['Python', 'TensorFlow', 'OpenCV', 'Raspberry Pi', 'UAV'],
+    image: '/images/projects/AI%20Weed%20Detection%20using%20U-Net.png',
+    github: 'https://github.com/rumman04/Autonomous-Drone-Based-Plant-Disease-Detection-Using-Machine-Learning-for-Precision-Agriculture',
+    demo: 'https://github.com/rumman04/Autonomous-Drone-Based-Plant-Disease-Detection-Using-Machine-Learning-for-Precision-Agriculture'
   },
   {
-    title: 'Potato Disease Detection',
-    description: 'CNN system for early detection of potato leaf diseases using image analytics.',
-    technologies: ['TensorFlow', 'CNN', 'Deep Learning'],
-    image: '/project-potato.png',
-    github: 'https://github.com/rumman04/potato-disease-detection',
-    demo: '#'
+    title: 'Pedestrian & Vehicle Detection with YOLOv5',
+    description: 'Real-time detection pipeline for pedestrians, humans, and vehicles using YOLOv5 on custom datasets for autonomous systems and safety applications.',
+    technologies: ['YOLOv5', 'Python', 'OpenCV', 'Computer Vision'],
+    image: '/images/projects/Potato%20Disease%20Detection.png',
+    github: 'https://github.com/rumman04/Pedestrian-Human-Vehicle-Detection-YOLOv5',
+    demo: 'https://github.com/rumman04/Pedestrian-Human-Vehicle-Detection-YOLOv5'
   },
   {
-    title: 'Smart IoT Fan using ESP32',
-    description: 'IoT-based smart fan controller with sensors and remote monitoring using Blynk.',
-    technologies: ['ESP32', 'Blynk', 'DHT11', 'Relay'],
-    image: '/project-iot-fan.png',
-    github: 'https://github.com/rumman04/smart-iot-fan',
-    demo: '#'
-  },
-  {
-    title: 'UAV Smart Agriculture Research',
-    description: 'Drone research combining computer vision and deep learning for agricultural monitoring.',
-    technologies: ['Drone', 'Computer Vision', 'Deep Learning'],
-    image: '/project-uav.png',
-    github: 'https://github.com/rumman04/uav-smart-agriculture',
-    demo: '#'
+    title: 'Volume Control Hand Gesture',
+    description: 'Hand gesture recognition system for intuitive volume control using computer vision and gesture tracking.',
+    technologies: ['Python', 'OpenCV', 'Gesture Recognition'],
+    image: '/images/projects/Smart%20IoT%20Fan%20using%20ESP32.png',
+    github: 'https://github.com/rumman04/Volume-Control-Hand-Gesture',
+    demo: 'https://github.com/rumman04/Volume-Control-Hand-Gesture'
   },
   {
     title: 'React Web Applications',
-    description: 'Modern frontend interfaces built with React and Tailwind CSS.',
+    description: 'Modern frontend interfaces built with React and Tailwind CSS for polished user experiences.',
     technologies: ['React', 'Next.js', 'Tailwind CSS'],
-    image: '/project-react.png',
-    github: 'https://github.com/rumman04/react-web-apps',
-    demo: '#'
+    image: '/images/projects/React%20web%20application.png',
+    github: 'https://github.com/rumman04/rumman04.github.io',
+    demo: 'https://github.com/rumman04/rumman04.github.io'
   }
 ];
 
@@ -172,9 +172,9 @@ export const testimonials = [
 ];
 
 export const gallery = [
-  { title: 'AI Weed Detection', image: '/gallery-weed.png' },
-  { title: 'Potato Disease Detection', image: '/gallery-potato.png' },
-  { title: 'Smart IoT Fan', image: '/gallery-iot-fan.png' },
-  { title: 'UAV Agriculture', image: '/gallery-uav.png' },
-  { title: 'React Web Interfaces', image: '/gallery-react.png' }
+  { title: 'AI Weed Detection', image: '/images/projects/AI%20Weed%20Detection%20using%20U-Net.png' },
+  { title: 'Potato Disease Detection', image: '/images/projects/Potato%20Disease%20Detection.png' },
+  { title: 'Smart IoT Fan', image: '/images/projects/Smart%20IoT%20Fan%20using%20ESP32.png' },
+  { title: 'UAV Agriculture', image: '/images/projects/UAV%20Smart%20Agriculture%20Research.png' },
+  { title: 'React Web Interfaces', image: '/images/projects/React%20web%20application.png' }
 ];
